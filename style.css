@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  margin-block: 1rem;
+  gap: 3rem;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+.navlist li:hover {
+  color: #aaa;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  height: 13vh;
+  border-bottom: 2px dotted #aaa;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-inline: 2rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  /* background-color: red; */
+}
+.hero-section {
+  display: flex;
+  height: calc(100vh - 1vh);
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  width: 100%;
+  margin-left: auto;
+  margin-top: 6rem;
+  border-bottom: 2px dotted #aaa;
+  padding-bottom: 4rem;
+}
+.content {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid purple; */
+  overflow: hidden;
+  position: relative;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: block;
+  /* background-image: url(./img/left-banner-image.jpg); */
+}
+.inner-content {
+  position: absolute;
+  top: 24%;
+  left: 15%;
+}
+.inner-content h1 {
+  font-size: 53px;
+  color: white;
+}
+.inner-content h6 {
+  color: white;
+  font-size: 2%;
+  line-height: 2px;
+  /* text-decoration: wavy; */
+  font-style: italic;
+  font-weight: 300;
+}
+.thumb {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+  box-sizing: border-box;
+  unicode-bidi: isolate;
+}
+.hero-section .content .thumb img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+.grid-container .containerr {
+  position: relative;
+  padding-top: 0;
+  height: auto;
+  width: auto;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding-top: 0;
+  height: auto;
+  width: auto;
+  /* align-items: center; */
+}
+/* 
+.right-first-box {
+  text-align: center */
+.right-first-box img {
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  display: block;
+}
+.inner-content h4 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.inner-content p {
+  color: white;
+}
+.hover-content {
+  position: absolute;
+  background-color: rgb(11, 4, 0);
+  opacity: 0.9;
+  height: 87%;
+  width: 90%;
+  transition: 0.5s ease-in-out;
+  display: none;
+  top: 6%;
+  left: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.hover-content h4 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  position: absolute;
+  /* display: flex; */
+  height: 3rem;
+  width: 10rem;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+.hover-content button {
+  position: absolute;
+  left: 14%;
+}
+.right-first-box:hover .hover-content {
+  display: block;
+}
+
+/* section 2 */
+
+.Mens {
+  max-width: 1140px;
+  /* border: 2px solid rebeccapurple; */
+  display: block;
+  position: relative;
+  margin: 2rem;
+  border-bottom: 2px dotted #aaa;
+}
+.rows {
+  width: 1073px;
+  justify-content: center;
+  /* border: 2px solid darkred; */
+  align-items: center;
+  margin-left: -9%;
+  display: flex;
+  height: 100%;
+}
+.menp {
+  width: 350px;
+  margin-right: 30px;
+  /* border: 2px solid red; */
+  position: relative;
+  min-height: 1px;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+}
+li a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  color: #2a2a2a;
+  margin-right: 2rem;
+  align-items: center;
+  background-color: white;
+}
+fa-solid {
+  /* position: absolute; */
+}
+/* .card-body {
+  position: relative;
+} */
+.hover-content1 {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  display: none;
+  justify-content: end;
+  gap: 1rem;
+  flex-direction: column;
+  padding-left: 1rem;
+  transition: 1s;
+  bottom: 77px;
+  /* transform: translateY(-2rem); */
+}
+
+.card:hover .hover-content1 {
+  display: flex;
+  /* height: 10rem; */
+}
+.card > .hover-content1 {
+  transform: translateY(2rem);
+  transition: trasform 0.2s;
+}
+.card > .hover-content1 {
+  transform: translateY(-2rem);
+}
+
+.down-content {
+  display: flex;
+  margin-right: 10px;
+}
+.down-content ul {
+  display: flex;
+  position: absolute;
+  left: 12rem;
+}
+.item {
+  margin-block: 2rem;
+}
+.cards-wrapper {
+  display: flex;
+}
+.card {
+  border: none;
+  margin: 0.5em;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0.25rem;
+}
+.carousel-item {
+  display: flex;
+}
+/* .carousel-inner {
+  display: flex;
+  padding: 1rem;
+}
+.carousel-item {
+  flex: 0, 0, calc(100% / 3);
+  margin-right: 0;
+  display: block;
+}
+.card {
+  margin: 1rem;
+  /* width: calc(100% / 3); */
+
+.explore-products {
+  /* border: 2px solid rebeccapurple; */
+  height: 100%;
+  width: auto;
+  margin-left: 4rem;
+}
+.btnn {
+  background-color: white;
+  color: #2a2a2a;
+  border: 1px solid black;
+}
+.btnn:hover {
+  background-color: #2a2a2a;
+  color: white;
+  transition: 0.05s ease-in-out;
+}
+.heading h1 {
+  font-weight: 700;
+}
+.heading p {
+  color: #aaa;
+}
+.social {
+  margin-top: 90px;
+  padding-bottom: 90px;
+  /* border-bottom: 3px dotted #eee; */
+}
+.insta {
+  display: flex;
+  width: 70rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding-left: 1rem;
+  opacity: 0;
+  transition: 0.6s;
+}
+.inner:hover {
+  opacity: 1;
+}
+.scontain {
+  width: 68rem;
+  padding-left: 3.5rem;
+}
+input {
+  width: 47%;
+  height: 44px;
+  line-height: 44px;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  color: #aaa;
+  border-radius: 0px;
+  border: 1px solid #7a7a7a;
+  box-shadow: none;
+}
+
+.main-dark-button {
+  border: 1px solid black;
+  background-color: #2a2a2a;
+  width: 2.8rem;
+  height: 2.7rem;
+  margin-left: 1.8rem;
+}
+.row ul {
+  display: block;
+  width: 14rem;
+}
+.col-lg-4 {
+  padding-left: 4rem;
+  flex-wrap: wrap;
+  width: 20rem;
+  /* border: 2px solid rebeccapurple; */
+}
+li h5 {
+  font-weight: 700;
+}
+------------------------------
+/* footer css */
+.links {
+  margin-top: 60px;
+  padding: 60px 0px 30px 0px;
+  background-color: #2a2a2a;
+}
+.card-container {
+  display: flex;
+  /* border: 2px solid rebeccapurple; */
+  width: 75rem;
+  padding-block: -1rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  margin-top: 60px;
+  padding: 60px 0px 30px 0px;
+  background-color: #2a2a2a;
+  color: white;
+}
+.over {
+  background-color: #2a2a2a;
+}
+.footer-links {
+  font-size: 0.9rem;
+  /* color: var(--light-grey); */
+}
+.footer-list:hover {
+  color: #aaa;
+}
+.col {
+  text-align: center;
+}
+.footer-list a {
+  background-color: #2a2a2a;
+  font-size: 14px;
+  color: white;
+  width: 10rem;
+}
+*/ [data-type="short-txt"] {
+  max-width: 300px;
+}
+.icon-links {
+  /* background-color: #cff; */
+  width: 2rem;
+  color: #cff;
+  border-radius: 50%;
+  margin-right: 0.1rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.3rem;
+  transition: 0.3s ease-in-out;
+}
+.icon-links:hover {
+  transform: translateY(-10%);
+}
+.line {
+  margin-top: 30px;
+  padding-top: 30px;
+  width: 90%;
+  margin-left: 3rem;
+  border-top: 1px solid white;
+}
+.underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* css code for hover on image with text up down  */
+/* .wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rebeccapurple;
+}
+.image {
+  width: 30rem;
+  position: relative;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.context {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+/* display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+  padding-left: 1rem;
+  opacity: 0;
+  transition: 0.6s; */
+/* }
+.sbtn {
+  gap: 1rem;
+  padding: 10rem;
+  margin-block: 2rem;
+}
+.context:hover {
+  opacity: 1;
+}
+.context h1 {
+  color: white;
+  margin-bottom: 4rem;
+}
+.content > * {
+  transform: translateY(2rem);
+  transition: trasform 0.7s;
+}
+.context:hover > * {
+  transform: translateY(-2rem);
+} */
